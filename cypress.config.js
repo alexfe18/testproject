@@ -1,8 +1,9 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  chromeWebSecurity: false,
   e2e: {
-    baseUrl: "https://qauto.forstudy.space", // Додаємо базовий URL
+    baseUrl: "https://www.saucedemo.com",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
